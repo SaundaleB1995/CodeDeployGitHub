@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /CodeDeployGitHub
+    destination: /new_chatapp
 
 hooks:
   BeforeInstall:
