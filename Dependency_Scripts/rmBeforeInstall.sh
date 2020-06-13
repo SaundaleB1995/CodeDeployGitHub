@@ -1,3 +1,3 @@
 #!/bin/bash
 cd /
-rm -rf /chatApplication/
+rm -rf /new_chatapp/
