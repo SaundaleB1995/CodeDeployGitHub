@@ -21,8 +21,8 @@ ALLOWED_HOSTS = ['*']
 # Email verification
 EMAIL_USE_TLS = True            # Email Tools true
 EMAIL_HOST = 'smtp.gmail.com'   # SMTP protocol for mail transfer
-EMAIL_HOST_USER = 'abc@gmail.com'   # email to be send from user
-EMAIL_HOST_PASSWORD = 'jskdnsndask'                   # password
+EMAIL_HOST_USER = 'saundalebhushan@gmail.com'   # email to be send from user
+EMAIL_HOST_PASSWORD = 'Bhushan@123'                   # password
 EMAIL_PORT = 587                                       # default email port
 DEFAULT_FROM_EMAIL = 'TestSite Team <noreply@example.com>'  # subject for email
 
@@ -103,11 +103,11 @@ CHANNEL_LAYERS = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dbname',
-        'USER': 'user',
-        'PASSWORD': 'dsfdsfbdspfus',
-        'HOST': 'endpoint.google.com',
-        'PORT': '1234',
+        'NAME': 'myDatabse',
+        'USER': 'Bhushan',
+        'PASSWORD': 'Bhushan123',
+        'HOST': 'bhushandatabase.cdhdu8rbe3nd.ap-south-1.rds.amazonaws.com',
+        'PORT': '5432',
     }
 }
 #sagar kadam
