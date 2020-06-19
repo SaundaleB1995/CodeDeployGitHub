@@ -106,7 +106,7 @@ DATABASES = {
         'NAME': 'myDatabse',
         'USER': 'Bhushan',
         'PASSWORD': 'Bhushan123',
-        'HOST': 'bhushandatabase.cdhdu8rbe3nd.ap-south-1.rds.amazonaws.com',
+        'HOST': 'db.cdhdu8rbe3nd.ap-south-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
