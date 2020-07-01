@@ -106,7 +106,7 @@ DATABASES = {
         'NAME': 'myDatabase',
         'USER': 'Bhushan',
         'PASSWORD': 'Bhushan123',
-        'HOST': 'terraform-20200622152506966500000001.cdhdu8rbe3nd.ap-south-1.rds.amazonaws.com',
+        'HOST': 'database.cdhdu8rbe3nd.ap-south-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
