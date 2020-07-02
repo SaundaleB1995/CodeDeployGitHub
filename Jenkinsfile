@@ -1,11 +1,5 @@
 pipeline {
-    agent any
-     stages {
-      stage('Build') {
-            steps {
-                echo "my build operation"
-            }
-        }
+    agent any{
      stage('Deploy') { 
            steps {
              sh ''' #! /bin/bash 
@@ -14,20 +8,5 @@ pipeline {
              '''
             }
         }
-      
-     stage('status'){
-            steps {
-            sh ''' #! /bin/bash
-            echo Deployment started
-            '''
-            }  
-        }  
-        
-    }
-    post { 
-        always { 
-            echo 'Stage is success'
-        }
-    }
-    
+    }     
 }
