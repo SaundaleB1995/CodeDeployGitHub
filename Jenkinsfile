@@ -1,7 +1,7 @@
 pipeline {
     agent any
      stages {
-      stage('build') {
+      stage('Build') {
             steps {
                 echo "my build operation"
             }
@@ -10,7 +10,7 @@ pipeline {
            steps {
              sh ''' #! /bin/bash 
              
-              aws deploy create-deployment --application-name MyChatApplication --deployment-group-name CFChatApp --deployment-config-name CodeDeployDefault.AllAtOnce --github-location repository=SaundaleB1995/ChatApplication,commitId=${GIT_COMMIT}
+              aws deploy create-deployment --application-name ChatApp --deployment-group-name CFChatApp --deployment-config-name CodeDeployDefault.AllAtOnce --github-location repository=SaundaleB1995/ChatApplication,commitId=${GIT_COMMIT}
              '''
             }
         }
