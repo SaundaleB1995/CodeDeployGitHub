@@ -18,4 +18,10 @@ pipeline {
             }  
         } 
      }
+    
+     post { 
+        always { 
+            echo 'Stage is success'
+        }
+    }
   }
