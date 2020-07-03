@@ -9,7 +9,6 @@ pipeline {
              '''
                  }
                }
-         
        stage('status'){
             steps {
             sh ''' #! /bin/bash
@@ -18,7 +17,6 @@ pipeline {
             }  
         } 
      }
-    
      post { 
         always { 
             echo 'Stage is success'
