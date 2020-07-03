@@ -9,5 +9,13 @@ pipeline {
              '''
                  }
                }
-             }
-           }
+         
+       stage('status'){
+            steps {
+            sh ''' #! /bin/bash
+            echo Deployment started
+            '''
+            }  
+        } 
+     }
+  }
