@@ -9,7 +9,7 @@ pipeline {
             withSonarQubeEnv('sonar') {
                 sh "${scannerHome}/bin/sonar-scanner"
             }
-            timeout(time: 3, unit: 'MINUTES') {
+            timeout(time: 5, unit: 'MINUTES') {
                 waitForQualityGate abortPipeline: true
             }
           }
@@ -22,7 +22,14 @@ pipeline {
               aws deploy create-deployment --application-name ChatApp --deployment-group-name CFChatApp --deployment-config-name CodeDeployDefault.AllAtOnce --github-location repository=SaundaleB1995/ChatApplication,commitId=${GIT_COMMIT}
              '''
             }
-        }      
+        } 
+              stage('status'){
+            steps {
+            sh ''' #! /bin/bash
+            echo Deployment started
+            '''
+            }  
+        }  
     }
     post { 
         always { 
