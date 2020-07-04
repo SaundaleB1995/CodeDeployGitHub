@@ -14,6 +14,11 @@ pipeline {
             }
           }
          }
+        stage('Build') { 
+           steps {
+             echo "Bhushan"
+            }
+        }
          
      stage('Deploy') { 
            steps {
