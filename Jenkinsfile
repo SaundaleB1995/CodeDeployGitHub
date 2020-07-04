@@ -1,7 +1,6 @@
 pipeline {
     agent any
-    
-     stages {
+         stages {
          stage('Sonarqube') {
            environment {
                 scannerHome = tool 'sonarScanner'
@@ -29,7 +28,5 @@ pipeline {
         always { 
             echo 'chat application stage is success'
         }
-    }
-    
-    
+    }   
 }
